@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <style>
-/* Layout: fundo do oceano em faixas, da superfície (cabeçalho e hero) até o fundo (rodapé); texto em coluna estreita, ilustração e cartões em largura total. */
 :root {
   --navy: #071E2B;
   --petrol: #0B2D3C;
@@ -315,6 +314,29 @@ figcaption { margin-top: 12px; font-size: 13px; color: var(--mist); }
   .turtle { transform: translate(480px, 190px); }
   .btn { transition: none; }
 }
+
+/* Seções complementares (03 a 07) */
+  .oceano-extra{color:#F1FAF8;font-family:Inter,system-ui,'Segoe UI',sans-serif;background:#071E2B;padding-block:60px}
+  .oceano-extra *{box-sizing:border-box}
+  .oceano-extra__container{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .oceano-extra__section{padding:42px 0;border-bottom:1px solid rgba(179,203,208,.18)}
+  .oceano-extra__eyebrow{color:#74DFB6;font-size:.78rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+  .oceano-extra h2{max-width:none;letter-spacing:-.02em;font-size:clamp(1.9rem,4vw,3rem);line-height:1.15;margin:12px 0 20px;color:#F1FAF8}
+  .oceano-extra h3{color:#F1FAF8;font-size:1.18rem;margin:0 0 10px}
+  .oceano-extra p,.oceano-extra li{color:#B3CBD0;line-height:1.7;font-size:1rem}
+  .oceano-extra p{margin:0 0 16px}
+  .oceano-extra strong{color:#F1FAF8}
+  .oceano-extra__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:25px}
+  .oceano-extra__grid--two{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .oceano-extra__card{background:#0B2D3C;border:1px solid rgba(116,223,182,.2);border-radius:18px;padding:24px}
+  .oceano-extra__icon{font-size:1.8rem;display:block;margin-bottom:16px}
+  .oceano-extra__number{color:#74DFB6;font-weight:800;font-size:1.1rem;display:block;margin-bottom:12px}
+  .oceano-extra__callout{background:#145B4D;border-radius:18px;padding:30px;margin-top:24px}
+  .oceano-extra__callout p{color:#F1FAF8}
+  .oceano-extra__actions{padding-left:22px;margin:18px 0 0}
+  .oceano-extra__actions li{margin-bottom:10px;padding-left:4px}
+  @media(max-width:700px){.oceano-extra{padding-block:30px}.oceano-extra__section{padding:32px 0}.oceano-extra__grid,.oceano-extra__grid--two{grid-template-columns:1fr}.oceano-extra__card{padding:20px}}
+  @media(prefers-reduced-motion:no-preference){.oceano-extra__card{transition:transform .2s ease,border-color .2s ease}.oceano-extra__card:hover{transform:translateY(-3px);border-color:rgba(116,223,182,.55)}}
 </style>
 </head>
 <body>
@@ -479,6 +501,59 @@ figcaption { margin-top: 12px; font-size: 13px; color: var(--mist); }
       </div>
     </div>
   </section>
+
+<div class="oceano-extra" role="region" aria-label="Informações complementares sobre plásticos nos oceanos">
+ <div class="oceano-extra__container">
+  <section class="oceano-extra__section" id="consequencias">
+   <div class="oceano-extra__eyebrow">03 / Consequências</div>
+   <h2>Consequências para a vida marinha</h2>
+   <p>A poluição plástica provoca diferentes impactos nos animais e ecossistemas aquáticos.</p>
+   <div class="oceano-extra__grid">
+    <article class="oceano-extra__card"><span class="oceano-extra__icon" aria-hidden="true">🐢</span><h3>Ingestão de plástico</h3><p>Tartarugas, peixes e aves marinhas podem confundir fragmentos plásticos com alimentos.</p><p>A ingestão desses materiais pode provocar ferimentos internos, obstruções no sistema digestivo, dificuldades de alimentação e, em casos graves, a morte.</p></article>
+    <article class="oceano-extra__card"><span class="oceano-extra__icon" aria-hidden="true">🪢</span><h3>Aprisionamento de animais</h3><p>Redes de pesca abandonadas, sacolas e outros resíduos podem prender animais marinhos.</p><p>Esse aprisionamento dificulta a movimentação, a alimentação e a respiração de diversas espécies.</p></article>
+    <article class="oceano-extra__card"><span class="oceano-extra__icon" aria-hidden="true">🌊</span><h3>Desequilíbrio dos ecossistemas</h3><p>A presença de resíduos plásticos pode prejudicar habitats marinhos e afetar diferentes organismos.</p><p>Quando uma espécie é prejudicada, outras também podem sofrer consequências, devido às relações existentes nas cadeias alimentares.</p></article>
+   </div>
+  </section>
+  <section class="oceano-extra__section" id="quimica">
+   <div class="oceano-extra__eyebrow">04 / A Química explica</div>
+   <h2>A Química por trás do plástico</h2>
+   <p>Para compreender por que os plásticos permanecem tanto tempo no ambiente, precisamos conhecer sua composição química.</p>
+   <p>Os plásticos são formados principalmente por <strong>polímeros</strong>, moléculas grandes constituídas por unidades menores e repetidas, chamadas <strong>monômeros</strong>.</p>
+   <p>Muitos plásticos convencionais possuem estruturas químicas resistentes à degradação ambiental. Isso significa que podem permanecer durante longos períodos na natureza.</p>
+   <p>A exposição à luz solar, ao movimento das ondas e ao atrito com outros materiais pode provocar a fragmentação desses resíduos. Entretanto, a fragmentação não significa necessariamente que o plástico desapareceu. Em muitos casos, ele apenas se transforma em partículas menores.</p>
+   <div class="oceano-extra__callout"><h3>O que são microplásticos?</h3><p>Microplásticos são partículas de plástico com tamanho inferior a 5 milímetros.</p><p>Eles podem surgir da fragmentação de objetos maiores ou ser liberados por diferentes produtos e atividades humanas.</p><p>Essas partículas podem se espalhar pela água, pelos sedimentos e pelos organismos aquáticos. Peixes e outros animais podem ingerir microplásticos acidentalmente.</p><p>Pesquisadores investigam os efeitos dessas partículas sobre os ecossistemas e os possíveis riscos associados à exposição humana.</p></div>
+  </section>
+  <section class="oceano-extra__section" id="solucoes">
+   <div class="oceano-extra__eyebrow">05 / Soluções</div>
+   <h2>Quais são as possíveis soluções?</h2>
+   <p>Apesar da gravidade do problema, existem diferentes formas de reduzir a poluição causada pelos plásticos.</p>
+   <div class="oceano-extra__grid oceano-extra__grid--two">
+    <article class="oceano-extra__card"><span class="oceano-extra__number">01</span><h3>Reduzir o consumo de descartáveis</h3><p>Sempre que possível, substituir produtos descartáveis por alternativas reutilizáveis, como garrafas, copos e recipientes duráveis.</p></article>
+    <article class="oceano-extra__card"><span class="oceano-extra__number">02</span><h3>Descartar corretamente os resíduos</h3><p>Evitar jogar embalagens, sacolas e garrafas nas ruas, rios, praias ou outros ambientes naturais. Utilizar os sistemas de coleta disponíveis na cidade.</p></article>
+    <article class="oceano-extra__card"><span class="oceano-extra__number">03</span><h3>Reutilizar e reciclar</h3><p>Reutilizar materiais quando possível e separar corretamente os resíduos recicláveis. A reciclagem pode contribuir para reduzir a demanda por novas matérias-primas e o descarte inadequado.</p></article>
+    <article class="oceano-extra__card"><span class="oceano-extra__number">04</span><h3>Investir em pesquisas e tecnologias</h3><p>A ciência busca desenvolver materiais alternativos, aperfeiçoar os processos de reciclagem e criar tecnologias que reduzam os impactos ambientais. Entretanto, nem todo plástico biodegradável se decompõe rapidamente no ambiente marinho.</p></article>
+    <article class="oceano-extra__card"><span class="oceano-extra__number">05</span><h3>Incentivar ações coletivas</h3><p>A solução também depende de empresas, governos e comunidades. Investimentos em saneamento, coleta de resíduos, educação ambiental e políticas públicas são fundamentais para combater a poluição.</p></article>
+   </div>
+  </section>
+  <section class="oceano-extra__section" id="atitudes">
+   <div class="oceano-extra__eyebrow">06 / Atitudes práticas</div>
+   <h2>O que podemos fazer no nosso dia a dia?</h2>
+   <p>Pequenas atitudes podem contribuir para diminuir a quantidade de resíduos descartados incorretamente.</p>
+   <ol class="oceano-extra__actions"><li>Utilizar garrafas e sacolas reutilizáveis.</li><li>Evitar embalagens desnecessárias.</li><li>Separar corretamente os materiais recicláveis.</li><li>Nunca jogar lixo nas ruas ou nos rios.</li><li>Participar de campanhas de conscientização ambiental.</li><li>Incentivar amigos e familiares a adotarem hábitos mais sustentáveis.</li></ol>
+   <p>Embora essas atitudes não resolvam o problema isoladamente, quando são praticadas por muitas pessoas e acompanhadas de ações coletivas, podem gerar mudanças importantes.</p>
+  </section>
+  <section class="oceano-extra__section" id="conclusao">
+   <div class="oceano-extra__eyebrow">07 / Conclusão</div>
+   <h2>O oceano também depende de você.</h2>
+   <p>A poluição plástica nos oceanos é um problema ambiental que ultrapassa fronteiras e afeta diferentes formas de vida.</p>
+   <p>A quantidade de resíduos que chega ao ambiente marinho demonstra a necessidade de mudanças na maneira como produzimos, consumimos e descartamos os materiais plásticos.</p>
+   <p>A Química nos ajuda a compreender a composição desses materiais, sua resistência à degradação e os impactos provocados pela formação de microplásticos.</p>
+   <p>Ao mesmo tempo, a ciência contribui para o desenvolvimento de alternativas e tecnologias que podem reduzir a poluição.</p>
+   <p>Entretanto, a preservação dos oceanos não depende apenas dos pesquisadores. Ela também exige responsabilidade dos consumidores, das empresas e dos governos.</p>
+   <div class="oceano-extra__callout"><h3>O oceano pode estar longe de nós, mas nossas atitudes podem chegar até ele.</h3><p>O mundo é grande, mas pequenas ações, quando multiplicadas por milhões de pessoas, podem provocar transformações significativas.</p><p><strong>Faça a diferença. O plástico que você descarta hoje pode impactar o amanhã.</strong></p></div>
+  </section>
+ </div>
+</div>
 
   <section class="section section-refs" id="fontes" aria-labelledby="t-fontes">
     <div class="wrap">
